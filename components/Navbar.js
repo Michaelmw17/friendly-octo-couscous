@@ -1,14 +1,12 @@
 import React, { useState, useRef } from 'react';
 import { Transition } from '@headlessui/react';
 import Link from 'next/link';
+// import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
   const inputRef = useRef();
 
-  function focus() {
-    console.log('focus', inputRef.current);
-  }
   return (
     <div>
       <nav className=" shadow-sm fixed w-full z-10">
@@ -29,9 +27,10 @@ export default function Navbar() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Home
+                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      Home
+                    </a>
                   </Link>
                   <br />
                   <Link
@@ -41,9 +40,10 @@ export default function Navbar() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    About
+                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      About
+                    </a>
                   </Link>
                   <br />
                   <Link
@@ -53,9 +53,10 @@ export default function Navbar() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Projects
+                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      Projects
+                    </a>
                   </Link>
                   <br />
                   <Link
@@ -67,7 +68,9 @@ export default function Navbar() {
                     duration={500}
                     className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Services
+                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      Services
+                    </a>
                   </Link>
                   <br />
                   <Link
@@ -77,9 +80,10 @@ export default function Navbar() {
                     smooth={true}
                     offset={50}
                     duration={500}
-                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
-                    Contact
+                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      Contact
+                    </a>
                   </Link>
                 </div>
               </div>
@@ -144,18 +148,19 @@ export default function Navbar() {
             <div className="md:hidden" id="mobile-menu">
               <div
                 ref={inputRef.current}
-                className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
+                className="bg-white bg-opacity-70 px-2 pt-2 pb-3 space-y-1 sm:px-3"
               >
                 <Link
-                  href="/home"
+                  href="/"
                   activeClass="home"
                   to="home"
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Home
+                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Home
+                  </a>
                 </Link>
                 <br />
                 <Link
@@ -165,9 +170,10 @@ export default function Navbar() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  About
+                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    About
+                  </a>
                 </Link>
                 <br />
                 <Link
@@ -177,9 +183,10 @@ export default function Navbar() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Projects
+                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Projects
+                  </a>
                 </Link>
                 <br />
                 <Link
@@ -189,9 +196,10 @@ export default function Navbar() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Services
+                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Services
+                  </a>
                 </Link>
                 <br />
                 <Link
@@ -201,9 +209,10 @@ export default function Navbar() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Contact
+                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Contact
+                  </a>
                 </Link>
               </div>
             </div>
