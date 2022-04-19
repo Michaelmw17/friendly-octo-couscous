@@ -1,7 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { Transition } from '@headlessui/react';
 import Link from 'next/link';
+import Image from 'next/image';
 // import { Link } from 'react-scroll';
+import logo from '/public/EcoGetawayLogo.jpeg';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
@@ -9,17 +11,15 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className=" shadow-sm fixed w-full z-10">
+      <nav className="bg-white bg-opacity-70 shadow-sm fixed w-full z-10">
         <div className="w-full">
           <div className="flex items-center h-20 w-full">
             <div className="flex items-center  mx-20  justify-between w-full">
-              <div className="flex justify-center items-center flex-shrink-0 ">
-                <h1 className=" font-bold text-xl cursor-pointer">
-                  Stream<span className="text-blue-500">line</span>
-                </h1>
+              <div className="flex justify-center items-center flex-shrink-0 mt-4  mr-14 ">
+                <Image alt="Logo" src={logo} width={80} height={80} />
               </div>
               <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+                <div className="ml- flex items-baseline space-x-4">
                   <Link
                     href="/"
                     activeClass="home"
@@ -34,9 +34,49 @@ export default function Navbar() {
                   </Link>
                   <br />
                   <Link
-                    href="/about"
+                    href="#Introduction"
+                    activeClass="Introduction"
+                    to="#Introduction"
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      Introduction
+                    </a>
+                  </Link>
+                  <br />
+                  <Link
+                    href="#Accommodation"
+                    activeClass="Accommodation"
+                    to="#Accommodation"
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                  >
+                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      Rooms
+                    </a>
+                  </Link>
+                  <br />
+                  <Link
+                    href="#gallery"
+                    activeClass="gallery"
+                    to="#gallery"
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  >
+                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      Photos
+                    </a>
+                  </Link>
+                  <br />
+                  <Link
+                    href="#about"
                     activeClass="about"
-                    to="/about"
+                    to="#about"
                     smooth={true}
                     offset={50}
                     duration={500}
@@ -47,36 +87,9 @@ export default function Navbar() {
                   </Link>
                   <br />
                   <Link
-                    href="/work"
-                    activeClass="work"
-                    to="work"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                  >
-                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                      Projects
-                    </a>
-                  </Link>
-                  <br />
-                  <Link
-                    href="/services"
-                    activeClass="services"
-                    to="services"
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                      Services
-                    </a>
-                  </Link>
-                  <br />
-                  <Link
-                    href="/contact"
-                    activeClass="work"
-                    to="work"
+                    href="#contact"
+                    activeClass="contact"
+                    to="#contact"
                     smooth={true}
                     offset={50}
                     duration={500}
@@ -164,9 +177,49 @@ export default function Navbar() {
                 </Link>
                 <br />
                 <Link
-                  href="/about"
+                  href="#Introduction"
+                  activeClass="Introduction"
+                  to="#Introduction"
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Introduction
+                  </a>
+                </Link>
+                <br />
+                <Link
+                  href="#Accommodation"
+                  activeClass="Accommodation"
+                  to="#Accommodation"
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Rooms
+                  </a>
+                </Link>
+                <br />
+                <Link
+                  href="#gallery"
+                  activeClass="gallery"
+                  to="#gallery"
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    Photos
+                  </a>
+                </Link>
+                <br />
+                <Link
+                  href="#about"
                   activeClass="about"
-                  to="/about"
+                  to="#about"
                   smooth={true}
                   offset={50}
                   duration={500}
@@ -177,35 +230,9 @@ export default function Navbar() {
                 </Link>
                 <br />
                 <Link
-                  href="/work"
-                  activeClass="work"
-                  to="work"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                    Projects
-                  </a>
-                </Link>
-                <br />
-                <Link
-                  href="/services"
-                  activeClass="services"
-                  to="services"
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  <a className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                    Services
-                  </a>
-                </Link>
-                <br />
-                <Link
-                  href="/contact"
-                  activeClass="work"
-                  to="work"
+                  href="#contact"
+                  activeClass="contact"
+                  to="#contact"
                   smooth={true}
                   offset={50}
                   duration={500}

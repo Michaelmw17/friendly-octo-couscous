@@ -6,7 +6,7 @@ import PhotoGalleryComponent from '../components/PhotoSection';
 import About from '../components/About';
 import Image from 'next/image';
 import { bgWrap } from '../styles/Home.module.css';
-
+import Footer from '../components/Footer';
 export default function Home() {
   return (
     <div>
@@ -29,6 +29,7 @@ export default function Home() {
       <Cards />
       <PhotoGalleryComponent />
       <About />
+      <Footer />
     </div>
   );
 }

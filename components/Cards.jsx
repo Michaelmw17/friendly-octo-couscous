@@ -3,7 +3,7 @@ import React from 'react';
 // import Link from 'next/link';
 export default function Cards() {
   return (
-    <div>
+    <div id="Accommodation">
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
@@ -54,14 +54,14 @@ export default function Cards() {
               </div>
             </div>
             <div className="p-4 md:w-1/3">
-              <div className="h-full rounded-xl shadow-cla-pink bg-gradient-to-r from-fuchsia-50 to-pink-50 overflow-hidden">
+              <div className="h-full rounded-xl shadow-cla-pink bg-gradient-to-r from-indigo-50 to-blue-50  overflow-hidden">
                 {/* <img className="lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100" src="https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="blog"> */}
                 <div className="p-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                    Owners
+                    Mary and Vince
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-600 mb-3">
-                    Mary and Vince
+                    Owners
                   </h1>
                   <p className="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings

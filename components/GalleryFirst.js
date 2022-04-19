@@ -17,7 +17,7 @@ const images = [
 
 class MyGallery extends React.Component {
   render() {
-    return <ImageGallery items={images} />;
+    return <ImageGallery items={images} id="gallery" />;
   }
 }
 export default MyGallery;
