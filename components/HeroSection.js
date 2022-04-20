@@ -8,9 +8,9 @@ function HeroSection() {
     <>
       <Background />
       <div className="flex justify-center items-center flex-col pt-40 text-center font-bold lg:text-8xl text-6xl space-y-2">
-        <h1 className="text-gray-900 pb-6">
+        {/* <h1 className="text-gray-900 pb-6">
           <span className="text-green-700"> Possum Creek</span>
-        </h1>
+        </h1> */}
         <div className="mb-10" id="Introduction">
           <Image alt="Logo Main" src={logo} width={200} height={200} />
         </div>

@@ -6,7 +6,7 @@ const SLIDE_COUNT = 33;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 const PhotoGalleryComponent = () => (
-  <main>
+  <main id="gallery">
     <EmblaCarousel slides={slides} />
   </main>
 );
