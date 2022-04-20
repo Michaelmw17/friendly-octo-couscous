@@ -50,13 +50,6 @@ export default function Home() {
         />
       </Head>
       <Navbar />
-      <Image
-        alt="nature"
-        src="/public/nature.webp"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-      />
       <HeroSection />
       <Cards />
       <PhotoGalleryComponent />
