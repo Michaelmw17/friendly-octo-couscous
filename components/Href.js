@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-// import './styleLocation.css';
-
 class Href extends Component {
   static defaultProps = {
     target: '_blank',

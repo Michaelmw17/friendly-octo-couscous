@@ -1,6 +1,5 @@
 import React from 'react';
-// import { Transition } from '@headlessui/react';
-// import Link from 'next/link';
+
 export default function Cards() {
   return (
     <div id="Accommodation">

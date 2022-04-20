@@ -1,22 +1,20 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '/public/EcoGetawayLogo.jpeg';
-import Link from 'next/link';
 import Background from '../components/background';
+
 function HeroSection() {
   return (
     <>
       <Background />
       <div className="flex justify-center items-center flex-col pt-40 text-center font-bold lg:text-8xl text-6xl space-y-2">
         <h1 className="text-gray-900 pb-6">
-          {/* <span className="text-green-500"> Eco Friendly Getaway </span> */}
-          {/* <br />@ */}
           <span className="text-green-700"> Possum Creek</span>
         </h1>
         <div className="mb-10" id="Introduction">
-          <Image alt="Mountains" src={logo} width={200} height={200} />
+          <Image alt="Logo Main" src={logo} width={200} height={200} />
         </div>
-        <div className="max-w-md py-12 px-4 bg-white shadow-lg rounded-lg my-10">
+        <div className="max-w-md py-12 px-4 bg-gradient-to-r from-pink-50 to-red-50 shadow-lg rounded-lg my-10">
           <div>
             <h2 className="text-gray-800 text-3xl font-semibold mt-0">
               Introduction

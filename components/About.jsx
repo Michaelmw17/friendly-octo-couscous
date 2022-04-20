@@ -1,7 +1,6 @@
 import React from 'react';
-// import { Transition } from '@headlessui/react';
-// import Link from 'next/link';
 import MyGoogleComponent from './Location';
+
 export default function About() {
   return (
     <>
@@ -9,7 +8,7 @@ export default function About() {
         className="flex  justify-center items-center flex-col pt-40 text-center font-bold lg:text-8xl text-6xl space-y-2"
         id="about"
       >
-        <div className="max-w-md py-12 px-4 bg-white shadow-lg rounded-lg my-10">
+        <div className="max-w-md py-12 px-4 bg-gradient-to-r from-pink-50 to-red-50 shadow-lg rounded-lg my-10">
           <div>
             <h2 className="text-gray-800 text-3xl font-semibold mt-0">About</h2>
             <p className="mt-4 text-gray-600 text-base">
@@ -31,10 +30,9 @@ export default function About() {
         id="Location"
       >
         <div>
-          {/* <img src="https://source.unsplash.com/random/350x350" alt=" random imgee" className="w-full object-cover object-center rounded-lg shadow-md">     */}
           <MyGoogleComponent />
           <div className="relative px-4 -mt-16  ">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-gradient-to-r from-indigo-50 to-blue-50 p-6 rounded-lg shadow-lg">
               <div className="flex items-baseline">
                 <span className="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
                   New

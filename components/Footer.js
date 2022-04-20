@@ -1,10 +1,8 @@
-import React, { Suspense } from 'react';
-import Href from './Href';
+import React from 'react';
 import '../styles/Home.module.css';
-// import Button from '@material-ui/core/Button';
-import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../public/EcoGetawayLogo.jpeg';
+
 const testDataSix = {
   text: 'Privacy Notice',
   link: 'https://opensource.org/licenses/MIT',
@@ -20,10 +18,8 @@ const Footer = () => {
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
           <a href="https://EcoGetaway.com" className="flex items-center">
-            {/* <Image src="../public/EcoGetawayLogo.svg" /> */}
-
-            <Image alt="Mountains" src={logo} width={150} height={150} />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <Image alt="Logo Footer" src={logo} width={150} height={150} />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white m-10">
               Eco Getaway
             </span>
           </a>

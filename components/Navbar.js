@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import { Transition } from '@headlessui/react';
 import Link from 'next/link';
 import Image from 'next/image';
-// import { Link } from 'react-scroll';
 import logo from '/public/EcoGetawayLogo.jpeg';
 
 export default function Navbar() {
