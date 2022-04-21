@@ -51,8 +51,8 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeroSection />
-      <Cards />
       <PhotoGalleryComponent />
+      <Cards />
       <About />
       <Footer />
     </div>

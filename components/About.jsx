@@ -5,13 +5,13 @@ export default function About() {
   return (
     <>
       <div
-        className="flex  justify-center items-center flex-col pt-40 text-center font-bold lg:text-8xl text-6xl space-y-2"
+        className="flex  justify-center items-center flex-col pt-5 text-center lg:text-8xl text-6xl space-y-2"
         id="about"
       >
-        <div className="max-w-md py-12 px-4 bg-gradient-to-r from-pink-50 to-red-50 shadow-lg rounded-lg my-10">
+        <div className="max-w-md py-12 px-4 bg-gradient-to-r from-indigo-50 to-blue-50 shadow-lg rounded-lg md: m-5">
           <div>
             <h2 className="text-gray-800 text-3xl font-semibold mt-0">About</h2>
-            <p className="mt-4 text-gray-600 text-base">
+            <p className="mt-4 text-gray-600 text-sm md:text-base">
               Possum Creek is a beautiful place close to Bangalow and the
               beaches of Byron Bay. There are two options for a holiday getaway.
               The main “Rosella” house outlook is North and overlooking rolling
