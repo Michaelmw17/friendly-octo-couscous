@@ -41,9 +41,14 @@
   height: 500px;
   padding: 18px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .embla__slide__inner {
-    height: 250px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .embla__slide__inner {
+    height: 300px;
   }
 }
 

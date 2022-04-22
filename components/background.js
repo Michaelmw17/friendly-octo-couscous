@@ -5,7 +5,7 @@ const Background = () => (
   <div className={bgWrap}>
     <Image
       alt="Nature background"
-      src="/nature.webp"
+      src="/pexels-pixmike-413195.jpg"
       layout="fill"
       objectFit="cover"
       quality={100}

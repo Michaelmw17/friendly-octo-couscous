@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Transition } from '@headlessui/react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '/public/EcoGetawayLogo.jpeg';
+import logo from '/public/EcoLogo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="w-full">
           <div className="flex items-center h-20 w-full">
             <div className="flex items-center  mx-20  justify-between w-full">
-              <div className="flex justify-center items-center flex-shrink-0 mt-4  mr-14 ">
+              <div className="flex justify-center items-center flex-shrink-0   mr-14 ">
                 <Image alt="Logo" src={logo} width={80} height={80} />
               </div>
               <div className="hidden md:block">
@@ -104,12 +104,12 @@ export default function Navbar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
+                className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white "
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
-                {!isOpen ? (
+                {isOpen ? (
                   <svg
                     className="block h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +148,7 @@ export default function Navbar() {
         </div>
 
         <Transition
-          show={isOpen}
+          show={!isOpen}
           enter="transition ease-out duration-100 transform"
           enterFrom="opacity-0 scale-95"
           enterTo="opacity-100 scale-100"
@@ -157,7 +157,7 @@ export default function Navbar() {
           leaveTo="opacity-0 scale-95"
         >
           {(inputRef) => (
-            <div className="md:hidden" id="mobile-menu">
+            <div className="md:hidden " id="navbar-collapse">
               <div
                 ref={inputRef.current}
                 className="bg-white bg-opacity-70 px-2 pt-2 pb-3 space-y-1 sm:px-3"

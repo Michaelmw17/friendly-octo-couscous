@@ -1,13 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '/public/EcoGetawayLogo.jpeg';
-import Background from '../components/background';
+import logo from '/public/EcoLogo.png';
 import '../styles/Home.module.css';
 function HeroSection() {
   return (
     <>
-      <Background />
-
       <div className="flex justify-center items-center flex-col pt-40 text-center lg:text-8xl text-6xl space-y-2">
         {/* <h1 className="text-gray-900 pb-6">
           <span className="text-green-700"> Possum Creek</span>

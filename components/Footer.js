@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Home.module.css';
 import Image from 'next/image';
-import logo from '../public/EcoGetawayLogo.jpeg';
+import logo from '../public/EcoLogo.png';
 
 const testDataSix = {
   text: 'Privacy Notice',
@@ -31,18 +31,24 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
-                <a href="https://Eco Getaway.com" className="hover:underline">
-                  Eco Getaway
+                <a
+                  href="https://friendly-octo-couscous.vercel.app/#gallery"
+                  className="hover:underline"
+                >
+                  Photos
                 </a>
               </li>
               <li>
-                <a href="https://tailwindcss.com/" className="hover:underline">
-                  Tailwind CSS
+                <a
+                  href="https://friendly-octo-couscous.vercel.app/#about"
+                  className="hover:underline"
+                >
+                  Location
                 </a>
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Follow us
             </h2>
@@ -64,7 +70,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Legal
